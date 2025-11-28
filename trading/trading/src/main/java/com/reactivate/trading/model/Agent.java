@@ -9,7 +9,7 @@ public class Agent {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private long id;
+        private Long id;
 
         @Column(nullable = false, length = 100)
         private String name;
@@ -20,13 +20,13 @@ public class Agent {
         public Agent() {
         }
 
-        public Agent(long id, String name, String email) {
+        public Agent(Long id, String name, String email) {
             this.id = id;
             this.name = name;
             this.email = email;
         }
 
-        public long getId() {
+        public Long getId() {
             return id;
         }
 
